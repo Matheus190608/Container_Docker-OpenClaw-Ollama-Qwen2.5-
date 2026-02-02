@@ -1,0 +1,17 @@
+# Volumes grandes (5GB+)
+volumes/ollama/
+volumes/openclaw/
+
+# Configs locais
+.openclaw/
+*.log
+.DS_Store
+Thumbs.db
+
+# Docker
+*.tar
+docker-compose.override.yml
+
+# IDE
+.vscode/
+.idea/

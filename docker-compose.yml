@@ -1,0 +1,15 @@
+services:
+  ollama:
+    image: ollama/ollama:latest
+    container_name: ollama-qwen
+    ports:
+      - "11434:11434"
+    volumes:
+      - .\volumes\ollama:/root/.ollama
+    restart: unless-stopped
+    # healthcheck temporariamente removido
+
+networks:
+  openclaw-net:
+    driver: bridge
+
